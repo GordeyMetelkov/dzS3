@@ -2,8 +2,7 @@
 Console.WriteLine("Введите число:");
 int n = Convert.ToInt32(Console.ReadLine());
 int count = 1;
-if (n<= 0) Console.Write("Введите число (N) больше 0.");
-else if (n>1)
+if (n>1)
 {
     Console.Write($"Все значения чисел от 1 до {n} в кубе -> ");
     while (n>count)
@@ -13,4 +12,5 @@ else if (n>1)
     }
     Console.Write(Math.Pow(count, 3) + ".");
 }
+else if (n<= 0) Console.Write("Введите число (N) больше 0.");
 else if (n == 1) Console.Write("В диапозоне только одно число - '1', куб которого равен 1.");
